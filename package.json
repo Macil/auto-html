@@ -1,0 +1,33 @@
+{
+  "name": "auto-html",
+  "version": "1.0.0",
+  "description": "ES6 Template string function for encoding text to HTML",
+  "main": "js/index.js",
+  "scripts": {
+    "prepublish": "babel -s inline -d js/ src/",
+    "test": "mocha"
+  },
+  "author": "Chris Cowan <agentme49@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgentME/auto-html.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgentME/auto-html/issues"
+  },
+  "keywords": [
+    "es6",
+    "html",
+    "escaping",
+    "template"
+  ],
+  "dependencies": {
+    "lodash": "^3.7.0"
+  },
+  "devDependencies": {
+    "babel": "^5.1.13",
+    "mocha": "^2.2.1",
+    "sinon": "^1.14.1"
+  }
+}
