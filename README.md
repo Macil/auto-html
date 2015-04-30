@@ -45,6 +45,11 @@ template strings natively yet, you may want to use an ES6 transpiler like
 This module can be used in browsers via a CommonJS bundler such as
 [Browserify](http://browserify.org/).
 
+The HTML encoding is done by
+[Lodash's escape function](https://lodash.com/docs#escape). Text encoded into
+HTML by this function is safe to be placed in HTML element attributes and as
+an element's children.
+
 Use of
 [Content Security Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
 headers is highly recommended to prevent XSS attacks! You'll still want to
