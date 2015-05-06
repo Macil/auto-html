@@ -21,4 +21,21 @@ describe("autoHtml", function() {
       "<span>\"'foo<>&amp;123</span>"
     );
   });
+
+  it("works okay with non-string types", function() {
+    const str = autoHtml `
+${5}
+${false}
+${true}
+${null}
+${undefined}
+${{}}
+${{toString() {return '<b>';}}}
+${{__html: {toString() {return '<i>';}}}}
+`;
+    assert.strictEqual(
+      str,
+      "\n5\nfalse\ntrue\n\n\n[object Object]\n&lt;b&gt;\n<i>\n"
+    );
+  });
 });
