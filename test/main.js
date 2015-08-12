@@ -22,6 +22,20 @@ describe("autoHtml", function() {
     );
   });
 
+  it("works with empty string", function() {
+    assert.strictEqual(
+      autoHtml `a${''}b`,
+      'ab'
+    );
+  });
+
+  it("works with empty raw html", function() {
+    assert.strictEqual(
+      autoHtml `a${{__html:''}}b`,
+      'ab'
+    );
+  });
+
   it("works okay with non-string types", function() {
     const str = autoHtml `
 ${5}
