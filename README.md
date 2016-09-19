@@ -1,5 +1,8 @@
 # autoHtml
 
+[![Circle CI](https://circleci.com/gh/AgentME/auto-html.svg?style=shield)](https://circleci.com/gh/AgentME/auto-html)
+[![npm version](https://badge.fury.io/js/auto-html.svg)](https://badge.fury.io/js/auto-html)
+
 This is a module containing a function to automatically encode Javascript ES6
 template strings into HTML safely. This lets you assemble HTML strings yourself
 but still with automatic safety from XSS attacks!
