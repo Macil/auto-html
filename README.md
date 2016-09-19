@@ -58,3 +58,8 @@ Use of
 headers is highly recommended to prevent XSS attacks! You'll still want to
 bother to encode your HTML correctly, but CSP headers stop that from being
 a remote-code-execution security issue at least.
+
+## Types
+
+[Flow](https://flowtype.org/) type declarations for this module are included!
+If you are using Flow, they won't require any configuration to use.
