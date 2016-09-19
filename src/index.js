@@ -1,4 +1,4 @@
-import escape from "lodash/string/escape";
+import escape from "lodash/escape";
 
 export default function autoHtml(templateParts, ...values) {
   const parts = new Array(templateParts.length*2-1);
