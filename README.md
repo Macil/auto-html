@@ -1,7 +1,6 @@
 # autoHtml
 
-[![Circle CI](https://circleci.com/gh/AgentME/auto-html.svg?style=shield)](https://circleci.com/gh/AgentME/auto-html)
-[![npm version](https://badge.fury.io/js/auto-html.svg)](https://badge.fury.io/js/auto-html)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgentME/auto-html/blob/master/LICENSE.txt) [![npm version](https://img.shields.io/npm/v/auto-html.svg?style=flat)](https://www.npmjs.com/package/auto-html) [![CircleCI Status](https://circleci.com/gh/AgentME/auto-html.svg?style=shield)](https://circleci.com/gh/AgentME/auto-html)
 
 This is a module containing a function to automatically encode Javascript ES6
 template strings into HTML safely. This lets you assemble HTML strings yourself
@@ -42,11 +41,11 @@ console.log(postHtml);
 
 This module is built for use with template strings, a feature of ES6, the next
 version of Javascript. If you are targeting platforms that don't support
-template strings natively yet, you may want to use an ES6 transpiler like
+template strings natively yet, you may want to use an ES6 compiler like
 [Babel](https://babeljs.io/).
 
 This module can be used in browsers via a CommonJS bundler such as
-[Browserify](http://browserify.org/).
+[Browserify](http://browserify.org/) or [Webpack](https://webpack.js.org/).
 
 The HTML encoding is done by
 [Lodash's escape function](https://lodash.com/docs#escape). Text encoded into
