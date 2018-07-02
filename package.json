@@ -4,7 +4,7 @@
   "description": "ES6 Template string function for encoding text to HTML",
   "main": "js/index.js",
   "scripts": {
-    "prepare": "babel -s inline -d js/ src/ && flow-copy-source -v src js",
+    "prepare": "rimraf js/ && babel -s inline -d js/ src/ && flow-copy-source -v src js",
     "test": "yarn run lint && yarn run flow_check && mocha",
     "flow_check": "flow check",
     "lint": "eslint .",
@@ -39,6 +39,7 @@
     "flow-bin": "^0.75.0",
     "flow-copy-source": "^2.0.0",
     "mocha": "^5.2.0",
+    "rimraf": "^2.6.2",
     "sinon": "^6.0.0"
   }
 }
