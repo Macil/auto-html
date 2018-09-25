@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "ES6 Template string function for encoding text to HTML",
   "main": "js/index.js",
+  "sideEffects": false,
   "scripts": {
     "prepare": "rimraf js/ && babel -s inline -d js/ src/ && flow-copy-source -v src js",
     "test": "yarn run lint && yarn run flow_check && mocha",
