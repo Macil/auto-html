@@ -15,10 +15,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AgentME/auto-html.git"
+    "url": "https://github.com/Macil/auto-html.git"
   },
   "bugs": {
-    "url": "https://github.com/AgentME/auto-html/issues"
+    "url": "https://github.com/Macil/auto-html/issues"
   },
   "keywords": [
     "es6",

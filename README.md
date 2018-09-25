@@ -1,6 +1,6 @@
 # autoHtml
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgentME/auto-html/blob/master/LICENSE.txt) [![npm version](https://img.shields.io/npm/v/auto-html.svg?style=flat)](https://www.npmjs.com/package/auto-html) [![CircleCI Status](https://circleci.com/gh/AgentME/auto-html.svg?style=shield)](https://circleci.com/gh/AgentME/auto-html) [![Greenkeeper badge](https://badges.greenkeeper.io/AgentME/auto-html.svg)](https://greenkeeper.io/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Macil/auto-html/blob/master/LICENSE.txt) [![npm version](https://img.shields.io/npm/v/auto-html.svg?style=flat)](https://www.npmjs.com/package/auto-html) [![CircleCI Status](https://circleci.com/gh/Macil/auto-html.svg?style=shield)](https://circleci.com/gh/Macil/auto-html) [![Greenkeeper badge](https://badges.greenkeeper.io/Macil/auto-html.svg)](https://greenkeeper.io/)
 
 This is a module containing a function to automatically encode Javascript ES6
 template strings into HTML safely. This lets you assemble HTML strings yourself
