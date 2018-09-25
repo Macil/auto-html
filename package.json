@@ -6,7 +6,7 @@
   "sideEffects": false,
   "scripts": {
     "prepare": "rimraf js/ && babel -s inline -d js/ src/ && flow-copy-source -v src js",
-    "test": "yarn run lint && yarn run flow_check && mocha",
+    "test": "yarn run lint && yarn run flow_check && mocha && tsc",
     "flow_check": "flow check",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix"
@@ -42,6 +42,7 @@
     "flow-copy-source": "^2.0.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.2",
-    "sinon": "^6.0.0"
+    "sinon": "^6.0.0",
+    "typescript": "^3.0.3"
   }
 }
