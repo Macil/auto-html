@@ -1,6 +1,9 @@
 {
-  "presets": ["es2015"],
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-flow"
+  ],
   "plugins": [
-    "add-module-exports", "transform-flow-strip-types"
+    "add-module-exports"
   ]
 }
