@@ -40,7 +40,8 @@ describe('autoHtml', function() {
 
   it('works okay with non-string types', function() {
     /* eslint-disable brace-style */
-    const str = autoHtml `
+    const _autoHtml: any = autoHtml;
+    const str = _autoHtml `
 ${5}
 ${false}
 ${true}
