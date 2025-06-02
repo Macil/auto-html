@@ -37,6 +37,14 @@ console.log(postHtml);
 // </div>
 ```
 
+This library only uses [Lodash's escape
+function](https://lodash.com/docs#escape) on values in the template string. It
+does not protect against dangerous values being inserted into HTML element
+attributes (like in `<a href="${link}">` where link could be
+`javascript:alert(1)`), and it does not protect against attacks from values
+being inserted into unquoted HTML attributes (like `<a title=${link}>`, where
+link could be `foo href="javascript:alert(1)"`).
+
 ## Miscellaneous
 
 This module is built for use with template strings, a feature of ES6, the next
