@@ -3,8 +3,6 @@
 /node_modules
 npm-debug.log
 /src
-/test
-/flow-libs
-/.circleci
+*.test.*
 .babelrc
 /.github

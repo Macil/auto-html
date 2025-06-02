@@ -1,7 +1,8 @@
 /* @flow */
 
 import assert from 'assert';
-import autoHtml from '../src/';
+import { describe, it } from 'vitest';
+import autoHtml from '.';
 
 describe('autoHtml', function() {
   it('works in basic case', function() {

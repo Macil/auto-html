@@ -1,8 +1,8 @@
 [ignore]
+<PROJECT_ROOT>/node_modules/hermes-.*
 
 [include]
 
 [libs]
-flow-libs/
 
 [options]
