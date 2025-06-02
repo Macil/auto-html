@@ -5,7 +5,7 @@
   "main": "js/index.js",
   "sideEffects": false,
   "scripts": {
-    "prepare": "rimraf js/ && babel -s inline -d js/ src/ && flow-copy-source -v src js",
+    "prepare": "rimraf js/ && babel -s true -d js/ src/ && flow-copy-source -v src js",
     "test": "npm run lint && npm run flow_check && vitest run && tsc",
     "flow_check": "flow check",
     "lint": "eslint .",
