@@ -6,10 +6,8 @@
   "sideEffects": false,
   "scripts": {
     "prepare": "rimraf js/ && babel -s true -d js/ src/",
-    "test": "npm run lint && npm run flow_check && vitest run && tsc",
-    "flow_check": "flow check",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix"
+    "test": "npm run flow_check && vitest run && tsc",
+    "flow_check": "flow check"
   },
   "author": "Chris Cowan <agentme49@gmail.com>",
   "license": "MIT",
@@ -36,8 +34,6 @@
     "@babel/preset-flow": "^7.0.0",
     "@babel/register": "^7.0.0",
     "@bunchtogether/vite-plugin-flow": "^1.0.2",
-    "babel-eslint": "^10.0.0",
-    "eslint": "^6.0.0",
     "flow-bin": "^0.100.0",
     "rimraf": "^6.0.1",
     "sinon": "^20.0.0",
