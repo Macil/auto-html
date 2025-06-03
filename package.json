@@ -1,6 +1,6 @@
 {
   "name": "auto-html",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "ES6 Template string function for encoding text into HTML",
   "main": "dist/src/index.js",
   "sideEffects": false,
