@@ -2,7 +2,7 @@
 
 import assert from 'assert';
 import { describe, it } from 'vitest';
-import autoHtml from '.';
+import { autoHtml } from '.';
 
 describe('autoHtml', function() {
   it('works in basic case', function() {

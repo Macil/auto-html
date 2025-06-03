@@ -7,11 +7,11 @@ template strings into HTML safely. This lets you assemble HTML strings yourself
 but still with automatic safety from XSS attacks!
 
 ```javascript
-import autoHtml from "auto-html";
+import { autoHtml } from "auto-html";
 
 const username = "Bob the XSS guy <script>alert(1)</script>";
 
-const userFormHtml = autoHtml `<div>Username: ${username}</div>`;
+const userFormHtml = autoHtml`<div>Username: ${username}</div>`;
 console.log(userFormHtml);
 // "<div>Username: Bob the XSS guy &lt;script&gt;alert(1)&lt;/script&gt;</div>"
 ```
@@ -26,9 +26,9 @@ const username = "Bob the XSS guy <script>alert(1)</script>";
 const comment = "Some **markdown** text";
 
 const commentHtml = markdownToHtml(comment); // markdownToHtml not included.
-const postHtml = autoHtml `<div class="post">
+const postHtml = autoHtml`<div class="post">
   <div>Username: ${username}</div>
-  <div>${{__html: commentHtml}}</div>
+  <div>${{ __html: commentHtml }}</div>
 </div>`;
 console.log(postHtml);
 // <div class="post">
@@ -68,6 +68,5 @@ a remote-code-execution security issue at least.
 
 ## Types
 
-Both [TypeScript](https://www.typescriptlang.org/) and
-[Flow](https://flowtype.org/) type definitions for this module are included!
-The type definitions won't require any configuration to use.
+[TypeScript](https://www.typescriptlang.org/) type definitions for this module
+are included! The type definitions won't require any configuration to use.
